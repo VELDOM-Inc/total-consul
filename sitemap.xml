@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://www.total-consul.co.jp/</loc>
+	</url>
+	<url>
+		<loc>https://www.total-consul.co.jp/business/</loc>
+	</url>
+	<url>
+		<loc>https://www.total-consul.co.jp/company/</loc>
+	</url>
+	<url>
+		<loc>https://www.total-consul.co.jp/facilities/</loc>
+	</url>
+	<url>
+		<loc>https://www.total-consul.co.jp/inquiry/</loc>
+	</url>
+	<url>
+		<loc>https://www.total-consul.co.jp/privacy/</loc>
+	</url>
+</urlset>

@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* ============================================================ */
+/* business */
+/* ============================================================ */
+.business-lead {
+	font-size: 3.4rem;
+	font-weight: 600;
+	padding: 0 0 90px;
+	/*margin: 0 0 100px;*/
+	text-align: center;
+	line-height: 1.6;
+	border-bottom: 1px solid var(--line-gray);
+}
+
+.business-point {
+	/*margin-bottom: 100px;*/
+	padding-top: 140px;
+}
+
+/*.business-point:last-child {
+	margin-bottom: 0;
+}*/
+
+.business-point__txt {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 90px;
+	margin-top: -140px;
+	padding-top: 140px;
+}
+
+@media only screen and (min-width: 830px) and (max-width: 1150px) {
+	.business-point__txt br {
+		display: none;
+	}
+}
+
+.business-point__txt .h2 {
+	width: 37.5%;
+}
+
+.business-point__txt .__detail {
+	width: calc((100% - 37.5%) - 100px);
+	padding: 65px 0 0;
+}

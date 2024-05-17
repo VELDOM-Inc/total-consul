@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* ============================================================ */
+/* contact */
+/* ============================================================ */
+.contact-customer {
+	margin-bottom: 40px;
+}
+
+.contact-customer__ttl {
+	font-weight: 600;
+	margin: 0 0 10px;
+	line-height: 1.6;
+	text-align: center;
+	font-size: 1.8rem;
+}
+
+.contact-tel {
+	padding: 0 0 35px;
+	border-bottom: 1px solid var(--line-gray);
+	margin: 0 0 -70px;
+}
+
+/* contact-title */
+.contact-title {
+}
+
+.contact-title__inner {
+	padding-left: 40px;
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.contact-title__inner::before {
+	box-sizing: border-box;
+	display: block;
+	z-index: 1;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 3.0rem;
+	line-height: 1.0;
+	font-family: 'icomoon';
+}
+
+.contact-title__inner._tel_::before {
+	color: #9E9E9E;
+	content: "\e942";
+}
+
+.contact-title__inner._mail_::before {
+	color: var(--orange);
+	content: "\e906";
+}
+
+.contact-title__inner .__jp {
+	font-size: 1.4rem;
+	margin-left: 10px;
+	font-weight: 600;
+}
+
+.contact-title__inner .__en {
+	font-size: 2.4rem;
+	text-transform: uppercase;
+	order: -1;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 600;
+}
+
+.contact-title__txt {
+	margin: 20px 0 0;
+	text-align: center;
+}
+
+.contact-title__txt .__num {
+	font-size: 4.0rem;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 600;
+	line-height: 1.0;
+	margin: 0 0 5px;
+}
+
+.contact-title__txt .__num .__link {
+	color: var(--black-text);
+}
+
+.contact-title__txt .__desc {
+	color: #9E9E9E;
+	font-size: 1.4rem;
+}
+
+
+/* contact-form */
+.contact-form {
+	padding-top: 130px;
+}
+
+.contact-form__inner {
+	margin-top: -130px;
+	padding-top: 130px;
+}
+
+
+/* contact-form__table */
+.contact-form__table .form-check {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.contact-form__table .form-check:last-child {
+	margin-bottom: 0;
+}
+
+.contact-form__table th {
+}
+
+.contact-form .alert {
+	color: var(--red);
+	font-weight: 600;
+	margin: 10px 0 0;
+}
+
+

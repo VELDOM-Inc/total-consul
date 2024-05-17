@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* ============================================================ */
+/* facilities */
+/* ============================================================ */
+.facilities-lead {
+	margin-bottom: 125px;
+}
+
+.facilities-lead .h2 {
+	margin-left: 60px;
+	margin-right: 60px;
+}
+
+.facilities-lead-detail {
+	margin: -140px 0 0;
+	padding: 0 65px 0 0;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+@media only screen and (min-width: 830px) and (max-width: 960px) {
+	.facilities-lead-detail {
+		align-items: flex-start;
+		padding: 0 35px;
+		margin: -100px 0 0;
+	}
+}
+
+.facilities-lead-detail__txt {
+	background: var(--white);
+	padding: 60px 60px 0;
+	width: 50%;
+	font-weight: 500;
+}
+
+@media only screen and (min-width: 830px) and (max-width: 960px) {
+	.facilities-lead-detail__txt {
+		padding: 40px 40px 0;
+		width: 55%;
+	}
+}
+
+.facilities-lead-detail__img {
+	width: 37.5%;
+	height: 300px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.facilities-lead-detail__img .__elem {
+	width: auto;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* facilities-maker */
+.facilities-maker {
+	background: var(--bg-gray);
+	padding: 155px 30px 140px;
+}
+
+.facilities-maker__ttl {
+	position: relative;
+	text-align: center;
+	margin: 0 0 45px;
+	font-size: 2.8rem;
+	font-weight: 600;
+}
+
+.facilities-maker__ttl .__txt {
+	position: relative;
+	z-index: 2;
+}
+
+.facilities-maker__ttl .__small {
+	font-size: 1.8rem;
+	font-weight: 500;
+}
+
+.facilities-maker__ttl::after {
+	box-sizing: border-box;
+	display: block;
+	z-index: 1;
+	position: absolute;
+	left: 50%;
+	bottom: -25px;
+	transform: translate(-50%, 0);
+	font-size: 15.0rem;
+	line-height: 1.0;
+	color: var(--white);
+	content: "maker";
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.facilities-maker__list {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 -30px;
+}
+
+.facilities-maker__list .list {
+	width: calc(100% / 3);
+	margin: 0 30px;
+	font-weight: 500;
+}

@@ -1,0 +1,2 @@
+User-Agent: *
+Sitemap : https://www.total-consul.co.jp/sitemap.xml

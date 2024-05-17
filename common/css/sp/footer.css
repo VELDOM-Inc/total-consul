@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+/* ============================================================ */
+/* footer */
+/* ============================================================ */
+.footer {
+	width: 100%;
+	background: url("../../img/common/bg_footer.jpg") 0 0 repeat;
+	background-size: cover;
+	color: var(--white);
+	padding: 0 0 70px;
+}
+
+.footer-contact {
+	padding: 45px 20px;
+	/*display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;*/
+	border-bottom: 1px solid rgba(255,255,255,0.15);
+	margin: 0 0 50px;
+	text-align: center;
+	width: 100%;
+}
+
+.footer-contact__ttl {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin: 0 0 20px;
+}
+
+.footer-contact__ttl .__en {
+	font-size: 2.8rem;
+	line-height: 1.4;
+	font-weight: 600;
+}
+
+.footer-contact__ttl .__jp {
+	font-size: 1.5rem;
+	line-height: 1.4;
+	font-weight: 400;
+}
+
+.footer-contact-tel {
+	text-align: center;
+	margin: 0 0 30px;
+}
+
+.footer-contact-tel__number {
+	font-size: 3.4rem;
+	line-height: 1.4;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center
+}
+
+.footer-contact-tel__number .__link {
+	color: var(--white);
+}
+
+.footer-contact-tel__txt {
+	color: #9E9E9E;
+	font-size: 1.4rem;
+	font-weight: 400;
+}
+
+.footer-contact__mail .btn {
+}
+
+.footer-contact__mail .__ico {
+	color: var(--orange);
+	margin: 0 10px 0 0;
+	font-size: 2.6rem;
+	line-height: 1.0;
+}
+
+
+/* footer__inner */
+.footer__inner {
+	/*padding: 0 20px;*/
+}
+
+.footer-logo {
+	font-size: 1.3rem;
+	font-weight: 300;
+	text-align: center;
+	margin: 0 0 40px;
+}
+
+.footer-logo__link {
+	max-width: 200px;
+	width: 100%;
+	display: block;
+	margin: 0 auto 15px;
+}
+
+.footer-logo__address .__link {
+	color: var(--white);
+}
+
+
+/* fnav
+------------------------------------------------------------ */
+.fnav {
+	border-top: 1px dotted rgba(255,255,255, 0.2);
+}
+
+.fnav__list {
+	margin: 0 0 30px;
+}
+
+.fnav__item {
+	border-bottom: 1px dotted rgba(255,255,255, 0.2);
+}
+
+.fnav__link {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	padding: 15px;
+	color: var(--white);
+	position: relative;
+	cursor: pointer;
+}
+
+.fnav__link .__ico {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--white);
+	font-size: 2.0rem;
+}
+
+
+/* footer copyright
+------------------------------------------------------------ */
+.footer-copyright {
+	font-size: 1.3rem;
+	color: #9E9E9E;
+	text-align: center;
+}
+
+
+/* ============================================================ */
+/* .pagetop */
+/* ============================================================ */
+.pagetop {
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+	z-index: 5; 
+}
+
+.pagetop__link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--orange);
+	font-size: 1.3rem;
+	line-height: 1.2;
+	text-decoration: none;
+	transition: all .4s;
+}
+
+.pagetop__link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: var(--orange);
+	font-size: 1.4rem;
+	line-height: 1.2;
+	text-decoration: none;
+	transition: all .4s;
+}
+
+.pagetop__link .__ico {
+	font-size: 2.6rem;
+	line-height: 1.0;
+	margin: 0 0 5px;
+}

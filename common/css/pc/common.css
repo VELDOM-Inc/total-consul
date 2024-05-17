@@ -1,0 +1,184 @@
+@charset "utf-8";
+/* ============================================================ */
+/* 基本設定 */
+/* ============================================================ */
+html {
+}
+
+body {
+	color: var(--black-text);
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 400;
+	line-height: 2.0;
+	text-align: center;
+	-webkit-text-size-adjust: none;
+}
+
+body.show {
+	overflow-y: hidden;
+	height: 100%;
+}
+
+.wrapper {
+	font-size: 1.6rem;
+	position: relative;
+	z-index: 1;
+	text-align: left;
+	overflow: hidden;
+	padding: 106px 0 0;
+}
+
+.index .wrapper {
+	padding: 0;
+}
+
+.sp_view {
+	display: none !important;
+}
+
+img {
+	width: 100%;
+}
+
+:root{
+  --red: #d12d26;
+  --orange: #EA6002;
+  --white: #fff;
+  --black: #000;
+	--gray: #CFCFCF;
+	--line-gray: #D6D6D6;
+	--line-gray2: #D9D9D9;
+	--bg-gray: #F4F4F4;
+	--black-text: #1B1B1B;
+	--bg-h2: 1px;
+}
+
+
+/* ============================================================ */
+/* リンク設定 */
+/* ============================================================ */
+a {
+	text-decoration: none;
+	color: var(--orange);
+	line-height: 1.4;
+}
+
+a:hover {
+}
+
+a .__txt {
+  background: linear-gradient(0deg, var(--orange), var(--orange)) no-repeat right bottom / 0 var(--bg-h2);
+  transition: background-size 350ms;
+  padding-bottom: 1px;
+}
+
+a:hover .__txt ,
+a:focus-visible .__txt {
+  background-size: 100% var(--bg-h2);
+  background-position-x: left;
+}
+
+.gnav__link .__txt ,
+.header-contact-mail__link .__txt ,
+.footer-contact__mail .__txt {
+	background: none;
+}
+
+a img {
+}
+
+a:hover img {
+	opacity: 1;
+}
+
+a[href*="tel:"] {
+	cursor: default;
+}
+
+a[href*="tel:"]:hover .__txt {
+	background: none;
+}
+
+
+/* link-opacity */
+.link-opacity {
+	transition: all .4s;
+}
+
+.link-opacity:hover {
+	opacity: 0.7;
+}
+
+/* link-arrow */
+.link-arrow {
+	display: flex;
+	line-height: 1.5;
+}
+
+.link-arrow__ico {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 8px;
+	height: 15px;
+	margin: 3px 10px 0 0;
+	color: var(--orange);
+}
+
+
+/* テキストスタイル
+------------------------------------------------------------ */
+.txt_bold {
+	font-weight: 600;
+}
+
+.txt_poppins { 
+	font-family: 'Poppins', sans-serif;
+}
+
+.txt_oswald {
+	font-family: 'Oswald', sans-serif;
+}
+
+
+/* アニメーション
+------------------------------------------------------------ */
+.fade-up {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s;
+  transform: translateY(150px);
+}
+
+.fade-up.is-active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.fadeUp {
+	animation-name: fadeUpAnime;
+	animation-duration: 0.9s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+	from {
+		opacity: 0;
+	transform: translateY(100px);
+	}
+
+	to {
+		opacity: 1;
+	transform: translateY(0);
+	}
+}
+
+.fadeUp02 {
+	animation-delay: 0.2s;
+}
+
+.fadeUp04 {
+	animation-delay: 0.4s;
+}

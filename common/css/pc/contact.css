@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* ============================================================ */
+/* contact */
+/* ============================================================ */
+.contact-customer {
+	margin-bottom: 110px;
+	font-size: 1.5rem;
+}
+
+.contact-customer__ttl {
+	font-weight: 600;
+	margin: 0 0 20px;
+	line-height: 1.6;
+	text-align: center;
+	font-size: 2.0rem;
+}
+
+.contact-tel {
+	margin: 0 0 -75px;
+	padding: 0 0 70px;
+	border-bottom: 1px solid var(--line-gray);
+}
+
+/* contact-title */
+.contact-title {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contact-title__inner {
+	padding-left: 48px;
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.contact-title__inner::before {
+	box-sizing: border-box;
+	display: block;
+	z-index: 1;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 3.8rem;
+	line-height: 1.0;
+	font-family: 'icomoon';
+}
+
+.contact-title__inner._tel_::before {
+	color: #9E9E9E;
+	content: "\e942";
+}
+
+.contact-title__inner._mail_::before {
+	color: var(--orange);
+	content: "\e906";
+}
+
+.contact-title__inner .__jp {
+	font-size: 2.0rem;
+	margin-left: 10px;
+	font-weight: 600;
+}
+
+.contact-title__inner .__en {
+	font-size: 4.0rem;
+	text-transform: uppercase;
+	order: -1;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 600;
+}
+
+.contact-title__txt {
+	width: calc(100% - 380px);
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.contact-title__txt .__num {
+	font-size: 6.4rem;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 600;
+	line-height: 1.0;
+}
+
+.contact-title__txt .__num .__link {
+	color: var(--black-text);
+}
+
+.contact-title__txt .__desc {
+	font-size: 1.5rem;
+	color: #9E9E9E;
+}
+
+/* contact-form */
+.contact-form {
+	padding-top: 140px;
+}
+
+.contact-form__inner {
+	margin-top: -140px;
+	padding-top: 140px;
+}
+
+
+/* contact-form__table */
+.contact-form__table .form-check {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.contact-form__table .form-check:last-child {
+	margin-bottom: 0;
+}
+
+.contact-form__table th {
+	font-size: 1.8rem;
+}
+
+.contact-form .alert {
+	color: var(--red);
+	font-weight: 600;
+}
+
+

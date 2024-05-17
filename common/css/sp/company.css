@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* ============================================================ */
+/* company */
+/* ============================================================ */
+.company-lead {
+	margin: 0 0 80px;
+	position: relative;
+}
+
+.company-lead__inner {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+}
+
+.company-lead-img {
+	width: 100%;
+	height: 230px;
+	position: relative;
+	z-index: 1;
+	order: 1;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.company-lead-img .__elem {
+	height: 100%;
+	object-fit: cover;
+}
+
+.company-lead__detail {
+	position: relative;
+	padding: 20px 20px 0;
+	z-index: 2;
+	order: 2;
+	text-align: center;
+}
+
+.company-lead__txt {
+	max-width: 665px;
+	margin: 0 auto 20px;
+}
+
+.company-lead__ttl {
+	font-size: 2.2rem;
+	font-weight: bold;
+	line-height: 1.6;
+	margin: 0 0 20px;
+	text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+
+.company-lead::after {
+	box-sizing: border-box;
+	display: block;
+	z-index: 1;
+	position: absolute;
+	left: 0;
+	bottom: -35px;
+	width: 100%;
+	background: var(--bg-gray);
+	content: "";
+	height: 180px;
+}
+
+
+/* company-data */
+.company-data {
+	margin: 0 0 60px;
+}
+
+.company-data__inner {
+}
+
+.company-data__table {
+}
+
+.company-data__table:last-child .table tr:first-child th {
+	border-top: none;
+}
+
+
+/* company-partner */
+.company-partner {
+	margin: 0 0 60px;
+}
+
+.company-partner__inner {
+}
+
+.company-partner__inner .list {
+	font-weight: 500;
+}
+
+
+/* company-access */
+.company-access {
+	margin: 0 0 60px;
+}
+
+.company-access__inner {
+	margin: 0 0 45px;
+	padding: 0 0 45px;
+	border-bottom: 1px solid var(--line-gray);
+	display: flex;
+	flex-direction: column;
+}
+
+.company-access__inner:last-child {
+	margin: 0;
+	padding: 0;
+	border-bottom: none;
+}
+
+.company-access__detail {
+	order: 2;
+}
+
+.company-access__txt .__ttl {
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+
+.company-access__txt {
+	margin: 0 0 20px;
+}
+
+.company-access__map {
+	order: 1;
+	margin: 0 0 20px;
+}
+
+.company-access__map .__inner {
+	margin: 0 0 20px;
+}
+
+.company-access__img {
+	display: flex;
+	justify-content: space-between;
+}
+
+.company-access__img .__item {
+	width: calc(50% - 10px);
+}
+
+
+/* company-movie */
+.company-movie .box {
+	padding: 30px;
+	background: var(--bg-gray);
+	text-align: center;
+	font-size: 2.4rem;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+

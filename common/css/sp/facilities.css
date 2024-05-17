@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* ============================================================ */
+/* facilities */
+/* ============================================================ */
+.facilities-lead {
+	margin-bottom: 60px;
+}
+
+.facilities-lead__img {
+	width: calc(100% + 40px);
+	height: 230px;
+	margin: 0 -20px;
+	position: relative;
+	z-index: 1;
+}
+
+.facilities-lead__img .__elem {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.facilities-lead-detail {
+	margin: -20px 0 0;
+	position: relative;
+	z-index: 2;
+}
+
+.facilities-lead-detail__txt {
+	background: var(--white);
+	padding: 30px 30px 0;
+	margin: 0 0 30px;
+	font-weight: 500;
+}
+
+/* facilities-maker */
+.facilities-maker {
+	background: var(--bg-gray);
+	padding: 70px 20px 50px;
+}
+
+.facilities-maker__inner {
+	padding: 0;
+}
+
+.facilities-maker__ttl {
+	position: relative;
+	text-align: center;
+	margin: 0 0 25px;
+	font-size: 2.2rem;
+	font-weight: 600;
+}
+
+.facilities-maker__ttl .__txt {
+	position: relative;
+	z-index: 2;
+}
+
+.facilities-maker__ttl .__small {
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+.facilities-maker__ttl::after {
+	box-sizing: border-box;
+	display: block;
+	z-index: 1;
+	position: absolute;
+	left: 50%;
+	bottom: -15px;
+	transform: translate(-50%, 0);
+	font-size: 8.0rem;
+	line-height: 1.0;
+	color: var(--white);
+	content: "maker";
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.facilities-maker__list {
+}
+
+.facilities-maker__list .list {
+	font-weight: 500;
+}
