@@ -77,6 +77,15 @@
 .company-data__table {
 }
 
+.company-data__table._table_ {
+	margin: 0 0 30px;
+}
+
+.company-data__table._img_ {
+	width: 80%;
+	margin: 0 auto;
+}
+
 .company-data__table:last-child .table tr:first-child th {
 	border-top: none;
 }
