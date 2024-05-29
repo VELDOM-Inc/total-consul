@@ -46,7 +46,7 @@
 	font-weight: 400;
 	text-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
-
+/*
 .index-visual__bg {
 	width: 100%;
 	height: 100vh;
@@ -60,7 +60,7 @@
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-}
+}*/
 
 .index-visual__scroll {
 	position: absolute;
@@ -112,6 +112,69 @@
   }
 }
 
+.index-visual-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 1;	
+	overflow: hidden;
+}
+
+.index-visual-bg__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  background-size: cover;
+  background-position: center center;  
+  animation: image-switch-animation 12s infinite;
+	animation-timing-function: ease-in;
+}
+
+.index-visual-bg__item._bg01_ {
+	background: url("../../img/index/pic_visual01.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.index-visual-bg__item._bg02_ {
+	background: url("../../img/index/pic_visual02.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.index-visual-bg__item._bg03_ {
+	background: url("../../img/index/pic_visual03.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.index-visual-bg__item._bg04_ {
+	background: url("../../img/index/pic_visual04.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.index-visual-bg__item:nth-of-type(1) {
+  animation-delay: 0s;
+}
+.index-visual-bg__item:nth-of-type(2) {
+  animation-delay: 3s;
+}
+.index-visual-bg__item:nth-of-type(3) {
+  animation-delay: 6s;
+}
+.index-visual-bg__item:nth-of-type(4) {
+  animation-delay: 9s;
+}
+
+@keyframes image-switch-animation {
+  0%{ opacity: 0;}
+  5%{ opacity: 1;}
+  25%{ opacity: 1;}
+  30%{ opacity: 0;}
+  100%{ opacity: 0;}
+}
 
 /* ============================================================ */
 /* .index-about */
@@ -575,6 +638,14 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+._basketball_.index-activities-bnr__item .index-activities-bnr__img {
+	background: #d71718;
+}
+
+.fadeUp02.index-activities-bnr__item .index-activities-bnr__img {
+	background: var(--white);
 }
 
 .index-activities-bnr__img .__elem {
