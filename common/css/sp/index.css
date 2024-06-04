@@ -114,18 +114,18 @@
   left: 0;
   bottom: 0;
   right: 0;
-  opacity: 0;
+  /*opacity: 0;*/
   background-size: cover;
   background-position: center center;  
-  animation: image-switch-animation 12s infinite;
-	animation-timing-function: ease-in;
+ /* animation: image-switch-animation 12s infinite;
+	animation-timing-function: ease-in;*/
 }
 
 .index-visual-bg__item._bg01_ {
 	background: url("../../img/index/pic_visual01_sp.jpg") center center no-repeat;
   background-size: cover;
 }
-
+/*
 .index-visual-bg__item._bg02_ {
 	background: url("../../img/index/pic_visual02_sp.jpg") center center no-repeat;
   background-size: cover;
@@ -161,7 +161,7 @@
   30%{ opacity: 0;}
   100%{ opacity: 0;}
 }
-
+*/
 /* ============================================================ */
 /* .index-about */
 /* ============================================================ */
